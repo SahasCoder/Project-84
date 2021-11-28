@@ -33,44 +33,25 @@ function my_keydown(e)
 		document.getElementById("d1").innerHTML="You pressed Alphabet Key";
 		console.log("alphabet key");
 	}
-	else{
-		otherkey();
-		document.getElementById("d1").innerHTML="You pressed symbol or other key";
-}
-
-if(keyPressed >=48 && keyPressed<=57){
+	else if (keyPressed >=48 && keyPressed<=57){
 	//write a code to check the type of key pressed
 	numberkey();
 	document.getElementById("d1").innerHTML="You pressed Number Key";
 	console.log("number key");
 }
-else{
-	otherkey();
-	document.getElementById("d1").innerHTML="You pressed symbol or other key";
-}
-
-if(keyPressed >=37 && keyPressed<=40){
+else if (keyPressed >=37 && keyPressed<=40){
 	//write a code to check the type of key pressed
 	arrowkey();
 	document.getElementById("d1").innerHTML="You pressed arrow key";
 	console.log("arrow key");
 }
-else{
-	otherkey();
-	document.getElementById("d1").innerHTML="You pressed symbol or other key";
-}
-
-if(keyPressed >=17 && keyPressed<=18){
+else if (keyPressed ==17 || keyPressed==18 || keyPressed==27 ){
 	//write a code to check the type of key pressed
 	specialkey();
 	document.getElementById("d1").innerHTML="You pressed special key";
 	console.log("special key");
 }
-else if(keyPressed =27){
-	specialkey();
-	document.getElementById("d1").innerHTML="You pressed special key";
-	console.log("special key");
-}
+
 else{
 	otherkey();
 	document.getElementById("d1").innerHTML="You pressed symbol or other key";
@@ -104,4 +85,3 @@ function otherkey()
 	img_image="otherkey.png";
 	add();
 }
-	
